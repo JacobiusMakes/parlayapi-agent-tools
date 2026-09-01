@@ -18,7 +18,9 @@ python -m twine upload dist/*    # needs PYPI_TOKEN
 Before uploading, confirm the name `parlayapi-agent-tools` is free on PyPI. It matches
 the naming of the existing `parlayapi-mcp` package, so it should be.
 
-After the first upload, remove the "Not on PyPI yet" note near the top of README.md.
+After the first upload, edit the Install section of README.md: delete the "Not on PyPI yet"
+paragraph and its `git+https` block, and delete the "Once it is published" line so the plain
+`pip install` block stands on its own.
 
 Consider adding a `pypi-publish` GitHub Action wired to a Trusted Publisher so future
 tags publish without a long lived token in the repo.

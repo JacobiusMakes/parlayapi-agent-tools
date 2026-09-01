@@ -15,6 +15,17 @@ tools = get_parlayapi_tools()   # reads PARLAY_API_KEY from the environment
 
 ## Install
 
+**Not on PyPI yet.** Install from source until it is published:
+
+```bash
+pip install "parlayapi-agent-tools[langchain] @ git+https://github.com/JacobiusMakes/parlayapi-agent-tools"
+```
+
+Swap `[langchain]` for `[llamaindex]`, or drop the extra entirely for the client and the raw JSON
+schemas on their own.
+
+Once it is published, the usual form works:
+
 ```bash
 pip install parlayapi-agent-tools[langchain]     # LangChain adapter
 pip install parlayapi-agent-tools[llamaindex]    # LlamaIndex adapter
@@ -24,9 +35,6 @@ pip install parlayapi-agent-tools                # client and raw JSON schemas o
 The core client is standard library only. Framework imports are guarded, so having just one
 framework installed is fine, and having none installed still gives you `ParlayAPIClient` and the
 raw function calling schemas.
-
-> Not on PyPI yet. Until it is published, install from source:
-> `pip install "parlayapi-agent-tools[langchain] @ git+https://github.com/JacobiusMakes/parlayapi-agent-tools"`
 
 ## 60 second quickstart
 
