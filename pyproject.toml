@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "parlayapi-agent-tools"
+version = "0.1.0"
+description = "ParlayAPI sports odds tools for LangChain, LlamaIndex and raw OpenAI/Anthropic function calling"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "ParlayAPI" }]
+keywords = [
+    "langchain",
+    "llamaindex",
+    "ai-agents",
+    "sports-betting",
+    "odds-api",
+    "function-calling",
+    "sports-odds",
+    "tool-use",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+# The core client is standard library only, on purpose: adding this package
+# to an agent project must not drag an HTTP stack in behind it.
+dependencies = []
+
+[project.optional-dependencies]
+langchain = ["langchain-core>=0.2", "pydantic>=2"]
+llamaindex = ["llama-index-core>=0.11", "pydantic>=2"]
+schemas = ["pydantic>=2"]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.urls]
+Homepage = "https://parlay-api.com"
+Documentation = "https://parlay-api.com/docs"
+Signup = "https://parlay-api.com/signup"
+MCP = "https://parlay-api.com/mcp"
+Source = "https://github.com/JacobiusMakes/parlayapi-agent-tools"
+
+[tool.setuptools]
+packages = ["parlayapi_tools"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "network: hits the live parlay-api.com API (keyless endpoints only)",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

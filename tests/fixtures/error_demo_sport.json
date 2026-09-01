@@ -1,0 +1,1 @@
+{"error":"demo_sport_not_supported","message":"Demo only covers ['americanfootball_nfl', 'baseball_mlb', 'basketball_nba', 'icehockey_nhl', 'mma_mixed_martial_arts', 'soccer_epl']. For full access sign up at https://parlay-api.com/signup","available_demo_sports":["americanfootball_nfl","baseball_mlb","basketball_nba","icehockey_nhl","mma_mixed_martial_arts","soccer_epl"]}

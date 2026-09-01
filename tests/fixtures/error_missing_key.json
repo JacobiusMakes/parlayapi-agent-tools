@@ -1,0 +1,1 @@
+{"detail":{"error":"MISSING_KEY","message":"Missing apiKey query param, X-API-Key header, or Authorization: Bearer header. No key yet? A free one takes under a minute: https://parlay-api.com/signup","signup_url":"https://parlay-api.com/signup","request_id":"b0c8ba1a4429a11f","docs_url":"/docs","status":401}}

@@ -1,0 +1,220 @@
+{
+ "_captured": "2026-09-01 from https://parlay-api.com/openapi.json",
+ "_note": "Trimmed to the endpoints this package wraps. Used by tests to prove every path and query parameter we send really exists.",
+ "openapi_version": "3.1.0",
+ "api_version": "3.2.0",
+ "paths": {
+  "/v1/sports": {
+   "summary": "List Sports",
+   "requires_key": false,
+   "parameters": [
+    {
+     "name": "all",
+     "in": "query",
+     "required": false
+    }
+   ]
+  },
+  "/v1/sports/{sport_key}/odds": {
+   "summary": "Get Odds",
+   "requires_key": true,
+   "parameters": [
+    {
+     "name": "sport_key",
+     "in": "path",
+     "required": true
+    },
+    {
+     "name": "regions",
+     "in": "query",
+     "required": false
+    },
+    {
+     "name": "markets",
+     "in": "query",
+     "required": false
+    },
+    {
+     "name": "oddsFormat",
+     "in": "query",
+     "required": false
+    },
+    {
+     "name": "dateFormat",
+     "in": "query",
+     "required": false
+    },
+    {
+     "name": "bookmakers",
+     "in": "query",
+     "required": false
+    },
+    {
+     "name": "eventIds",
+     "in": "query",
+     "required": false
+    },
+    {
+     "name": "commenceTimeFrom",
+     "in": "query",
+     "required": false
+    },
+    {
+     "name": "commenceTimeTo",
+     "in": "query",
+     "required": false
+    },
+    {
+     "name": "date",
+     "in": "query",
+     "required": false
+    },
+    {
+     "name": "include",
+     "in": "query",
+     "required": false
+    },
+    {
+     "name": "verified",
+     "in": "query",
+     "required": false
+    },
+    {
+     "name": "live",
+     "in": "query",
+     "required": false
+    },
+    {
+     "name": "include_live",
+     "in": "query",
+     "required": false
+    }
+   ]
+  },
+  "/v1/sports/{sport_key}/best-line": {
+   "summary": "Best Line Alias",
+   "requires_key": false,
+   "parameters": [
+    {
+     "name": "sport_key",
+     "in": "path",
+     "required": true
+    },
+    {
+     "name": "markets",
+     "in": "query",
+     "required": false
+    },
+    {
+     "name": "oddsFormat",
+     "in": "query",
+     "required": false
+    },
+    {
+     "name": "bookmakers",
+     "in": "query",
+     "required": false
+    }
+   ]
+  },
+  "/v1/historical/sports/{sport_key}/closing-odds": {
+   "summary": "Get Historical Closing Odds",
+   "requires_key": true,
+   "parameters": [
+    {
+     "name": "sport_key",
+     "in": "path",
+     "required": true
+    },
+    {
+     "name": "markets",
+     "in": "query",
+     "required": false
+    },
+    {
+     "name": "bookmakers",
+     "in": "query",
+     "required": false
+    },
+    {
+     "name": "season",
+     "in": "query",
+     "required": false
+    },
+    {
+     "name": "date",
+     "in": "query",
+     "required": false
+    },
+    {
+     "name": "dateFrom",
+     "in": "query",
+     "required": false
+    },
+    {
+     "name": "dateTo",
+     "in": "query",
+     "required": false
+    },
+    {
+     "name": "player",
+     "in": "query",
+     "required": false
+    },
+    {
+     "name": "include_imports",
+     "in": "query",
+     "required": false
+    },
+    {
+     "name": "limit",
+     "in": "query",
+     "required": false
+    },
+    {
+     "name": "offset",
+     "in": "query",
+     "required": false
+    },
+    {
+     "name": "oddsFormat",
+     "in": "query",
+     "required": false
+    }
+   ]
+  },
+  "/v1/try/{sport_key}/odds": {
+   "summary": "Try Odds",
+   "requires_key": false,
+   "parameters": [
+    {
+     "name": "sport_key",
+     "in": "path",
+     "required": true
+    }
+   ]
+  },
+  "/v1/try/{sport_key}/ev": {
+   "summary": "Try Ev",
+   "requires_key": false,
+   "parameters": [
+    {
+     "name": "sport_key",
+     "in": "path",
+     "required": true
+    }
+   ]
+  },
+  "/v1/account": {
+   "summary": "Get Usage",
+   "requires_key": false,
+   "parameters": [
+    {
+     "name": "by_endpoint",
+     "in": "query",
+     "required": false
+    }
+   ]
+  }
+ }
+}
