@@ -1,5 +1,9 @@
 # parlayapi-agent-tools
 
+[![ci](https://github.com/JacobiusMakes/parlayapi-agent-tools/actions/workflows/ci.yml/badge.svg)](https://github.com/JacobiusMakes/parlayapi-agent-tools/actions/workflows/ci.yml)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)](https://github.com/JacobiusMakes/parlayapi-agent-tools/blob/main/pyproject.toml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
 Ready made [ParlayAPI](https://parlay-api.com) sports odds tools for LangChain, LlamaIndex, and
 plain OpenAI or Anthropic function calling.
 
