@@ -8,8 +8,9 @@ Ready made [ParlayAPI](https://parlay-api.com) sports odds tools for LangChain, 
 plain OpenAI or Anthropic function calling.
 
 Live bookmaker odds across 30+ sportsbooks, cross book line comparison, and historical closing
-lines, wrapped as agent tools with descriptions written for a model to read. Two of the tools need
-no API key at all, so an agent can return real odds before anyone signs up for anything.
+lines, wrapped as agent tools with descriptions written for a model to read. Three of the six
+tools need no API key at all, and two of those return real odds, so an agent can quote live
+prices before anyone signs up for anything.
 
 ```python
 from parlayapi_tools.langchain import get_parlayapi_tools
@@ -129,8 +130,8 @@ takes the agent loop down with it.
 
 ## Keyless demo, nothing to sign up for
 
-Two tools need no API key. Use them in examples, in READMEs, and as a fallback when a user has not
-configured a key yet.
+Three tools need no API key: `parlayapi_list_sports` plus the two demo tools below. Use the demo
+tools in examples, in READMEs, and as a fallback when a user has not configured a key yet.
 
 ```python
 from parlayapi_tools import ParlayAPIClient, format_events_for_llm
