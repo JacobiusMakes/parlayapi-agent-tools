@@ -40,6 +40,11 @@ The core client is standard library only. Framework imports are guarded, so havi
 framework installed is fine, and having none installed still gives you `ParlayAPIClient` and the
 raw function calling schemas.
 
+Want a running example before wiring anything yourself?
+[parlayapi-betting-agent-starter](https://github.com/JacobiusMakes/parlayapi-betting-agent-starter)
+installs this package, pulls live odds keyless, and prints no-vig fair lines with one command, or
+one click in Colab or Codespaces.
+
 ## 60 second quickstart
 
 ### LangChain
